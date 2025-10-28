@@ -12,12 +12,14 @@ const Hero = () => {
 
   return (
     <section id='hero'>
-        <div>
-            <h1>Welcome to Our Website</h1>
-            <img src='/title.png' alt='Title'/>
-            <video ref={vidRef} src='videos/hero.mp4' autoPlay loop muted playsInline/>
-            <button>Get Started</button>
-            <p>Your success starts here. Discover our services and solutions designed to help you achieve your goals.</p>
+        <div className="hero-video-wrap">
+            <video ref={vidRef} src='videos/heros.webm' autoPlay loop muted playsInline className="hero-video" />
+
+            <div className="hero-overlay">
+                <h1>Gonta Arena hadir disini</h1>
+                <p>Do one thing and do it well</p>
+                <button className="hero-cta">Get Started</button>
+            </div>
         </div>
     </section>
   )
